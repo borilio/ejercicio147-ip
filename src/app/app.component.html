@@ -18,7 +18,7 @@
       <li class="list-group-item">Región {{ datosLocalizacion.region }}</li>
       <li class="list-group-item">Datos ISP {{ datosLocalizacion.hostname }}</li>
       <li class="list-group-item">Compañía {{ datosLocalizacion.org }}</li>
-      <li class="list-group-item">Ubicación {{ datosLocalizacion.loc }}</li>
+      <li class="list-group-item">Ubicación <a class="btn btn-link" target="_blank" [href]="'https://www.google.es/maps/place/' + this.datosLocalizacion.loc" >{{datosLocalizacion.loc}}</a></li>
     </ul>
   </div>
 </div>
